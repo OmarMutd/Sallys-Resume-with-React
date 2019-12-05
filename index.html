@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sally Resume Remix (ft. React)</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<div id="root"></div> <!-- ROOT -->
+
+
+<!-- REACT LIBRARIES -->
+<script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+
+<!-- JAVASCRIPT -->
+	<script type="text/babel">
+		
+	//functional components
+	function MyApp() {
+		return (
+			<div id="MyApp">
+				<header id='intro'>
+					<header>
+      <h1>Sally Student Resume</h1>
+      
+    </header>
+    <main>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>Graduated from Texas Tech with a bachelors in computer science in 2007.</li>
+        
+        <li>Graduated from Stanford with a masters in computer science in 2009.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Job Expierence</h2>
+      <ul>
+        <li>Worked as a software devolper at Apple from 2010 to 2014</li>
+        
+        <li>Worked as a senior devolper at Microsoft from 2014 to 2018</li>
+      </ul>
+    </section>
+    
+      <h2> Contact Section Info </h2>
+    <address>
+      <ul>
+        <li>Name: Sally Student</li>
+        
+
+        <li><a href="SallyStudent@gmail.com">SallyStudent@gmail.com</a></li>
+        
+
+        <li>Phone Number: 123-456-7890</li>
+
+      </ul>
+    
+
+        <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="This is a picture of Sally" style="width:300px;height:400px;" title="Sally">
+    </address>
+       
+    
+    </main>
+  
+  <footer>© 2019 Sally A. Student</footer> 
+  </body>
+		);
+	}
+	ReactDOM.render(<App />,document.querySelector('#application-root'));
+	</script>
+</body>
+</html>
